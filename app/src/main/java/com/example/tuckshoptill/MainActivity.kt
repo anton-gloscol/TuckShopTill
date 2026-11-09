@@ -75,7 +75,20 @@ fun TuckShopTillApp(modifier: Modifier = Modifier) {
     Column(modifier = modifier.fillMaxSize().padding(24.dp)) {
         Text("Tuck Shop Till", fontSize = 32.sp)
         Spacer(modifier = Modifier.height(16.dp))
-        Text("Your till goes here")
+        Text("This shop is open today only", fontSize = 32.sp)
+        Spacer(modifier = Modifier.height(40.dp))
+        Text("Total: £0.00", fontSize = 24.sp)
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Row {
+            Button(onClick = { }) {
+            Text("Crisps 80p")
+            }
+            Spacer(modifier = Modifier.width(8.dp))
+            Button(onClick = { }) {
+                Text("Water 70p")
+            }
+        }
     }
 }
 
